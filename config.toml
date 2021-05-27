@@ -2,3 +2,6 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "WHS"
 theme = "mainroad"
+
+[Params]
+  post_meta = ["date"]
