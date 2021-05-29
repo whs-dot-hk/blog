@@ -5,7 +5,7 @@ tags:
   - Cuda
   - Releases
 ---
-Cuda 11.3.1 is out. Download with
+Cuda 11.3.1 is out. Download with the following command
 
 ```sh
 cd ~/Downloads
