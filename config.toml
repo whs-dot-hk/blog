@@ -1,7 +1,17 @@
-baseURL = "http://example.org/"
+baseURL = "https://whs.hk/"
 languageCode = "en-us"
 title = "WHS"
 theme = "mainroad"
 
 [Params]
   post_meta = ["date"]
+
+[Params.sidebar]
+  home = "right"
+  list = "left"
+  single = false
+  widgets = ["social"]
+
+[Params.widgets.social]
+  linkedin = "henry-w-250b64211"
+  github = "whs-dot-hk"
