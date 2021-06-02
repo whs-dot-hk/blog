@@ -1,9 +1,10 @@
 baseURL = "https://whs.hk/"
 languageCode = "en-us"
-title = "WHS"
+title = "Wong Heung Sang"
 theme = "mainroad"
 
 [Params]
+  copyright = "WHS"
   post_meta = ["date"]
 
 [Params.sidebar]
