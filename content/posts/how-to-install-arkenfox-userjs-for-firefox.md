@@ -2,6 +2,7 @@
 title: "How to Install Arkenfox User.js for Firefox"
 date: 2021-06-10T14:23:56+08:00
 tags:
+  - Howtos
   - Arkenfox
   - user.js
   - Firefox
