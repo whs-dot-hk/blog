@@ -1,0 +1,39 @@
+name: Github actions releases
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+jobs:
+  ClearLinuxLinux:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_URL: https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-64bit.tar.gz
+      TXT: data/linux.txt
+      URL: https://raw.githubusercontent.com/clearlinux-pkgs/linux/master/linux.spec
+    steps:
+      - uses: actions/checkout@v2
+
+      - run: curl -OL $HUGO_URL
+      - run: tar -xzvf hugo*.tar.gz hugo
+
+      - run: git config --global user.name whs
+      - run: git config --global user.email hswongac@gmail.com
+
+      - run: curl -s $URL | grep -i "version:" | awk '{ print $2 }' | xargs printf "version=%s" >> $GITHUB_ENV
+      - run: echo $version | cmp -s $TXT - || echo "version_updated=true" >> $GITHUB_ENV
+
+      - run: ./hugo new -klinux posts/clear-linux-kernel-$(echo $version | sed 's,\.,-,g')-released.md
+        if: ${{ env.version_updated == 'true' }}
+
+      - run: mkdir -p data
+
+      - run: echo $version > $TXT
+        if: ${{ env.version_updated == 'true' }}
+
+      - run: git add content/posts/clear-linux-kernel-* $TXT
+        if: ${{ env.version_updated == 'true' }}
+
+      - run: git commit -m "Add clear linux kernel $version released"
+        if: ${{ env.version_updated == 'true' }}
+
+      - run: git push
+        if: ${{ env.version_updated == 'true' }}
