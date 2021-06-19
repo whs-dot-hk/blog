@@ -5,6 +5,9 @@ tags:
   - Userscripts
   - Youtube
   - Automations
+menu:
+  main:
+    name: Youtube Like
 ---
 A simple userscript for liking youtube videos automatically
 
