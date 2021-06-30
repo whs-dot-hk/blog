@@ -6,11 +6,11 @@ document
   .querySelector("ytd-app")
   .addEventListener("yt-page-data-updated", function () {
     const likeButton = document.querySelector(
-      "ytd-menu-renderer.ytd-video-primary-info-renderer > div:nth-child(2) > ytd-toggle-button-renderer:nth-child(1) > a:nth-child(1)"
+      "ytd-menu-renderer.ytd-video-primary-info-renderer > div:nth-child(1) > ytd-toggle-button-renderer:nth-child(1) > a:nth-child(1)"
     );
 
     const likeButtonIcon = document.querySelector(
-      "ytd-menu-renderer.ytd-video-primary-info-renderer > div:nth-child(2) > ytd-toggle-button-renderer:nth-child(1) > a:nth-child(1) > yt-icon-button:nth-child(1)"
+      "ytd-menu-renderer.ytd-video-primary-info-renderer > div:nth-child(1) > ytd-toggle-button-renderer:nth-child(1) > a:nth-child(1) > yt-icon-button:nth-child(1)"
     );
 
     const videoTitle = document.querySelector(
