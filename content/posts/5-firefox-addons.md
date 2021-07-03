@@ -8,6 +8,9 @@ tags:
   - Userscripts
   - KeePassXC
   - Recommendations
+menu:
+  main:
+    name: Useful Firefox Addons
 ---
 I found that this 5 [Firefox Addons][firefox addons homepage] are really useful.
 
