@@ -12,9 +12,9 @@ tags:
 [Arkenfox user.js][arkenfox user.js] is a Firefox privacy and security config.
 
 ```sh
-cd Downloads
+cd ~/Downloads
 curl -O https://raw.githubusercontent.com/arkenfox/user.js/master/updater.sh
-echo 0 | sh updater.sh -l
+echo 2 | sh updater.sh -l
 ```
 
 [arkenfox user.js]: https://github.com/arkenfox/user.js
