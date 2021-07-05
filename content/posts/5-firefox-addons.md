@@ -22,7 +22,7 @@ I found that this 5 [Firefox Addons][firefox addons homepage] are really useful.
 
 And their settings
 
-- [Cookie Autodelete Settings][cookie-autodelete-settings]
+- [Cookie Autodelete Settings][cookie autodelete settings]
 
 [cookie-autodelete]: https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete
 [greasemonkey]: https://addons.mozilla.org/en-US/firefox/addon/greasemonkey
@@ -32,4 +32,4 @@ And their settings
 
 [firefox addons homepage]: https://addons.mozilla.org/en-US/firefox
 
-[cookie-autodelete-settings]: /posts/cookie-autodelete-settings
+[cookie autodelete settings]: /posts/cookie-autodelete-settings
