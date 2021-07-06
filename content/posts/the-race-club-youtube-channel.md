@@ -7,6 +7,9 @@ tags:
   - Swimming
   - Freestyle
   - Recommendation
+menu:
+  main:
+    name: Best Swimming Channel
 ---
 [The Race Club][the race club] Youtube channel have many amazing [swimming technique videos][the race club videos].
 Go check them out!
