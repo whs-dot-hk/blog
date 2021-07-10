@@ -11,11 +11,11 @@ tags:
 You should enable the two settings below for Firefox Addon [Cookie Autodelete][cookie-autodelete].
 
 ```
-CAD Settings > Enable Automatic Cleaning
+1. CAD Settings > Enable Automatic Cleaning
 ```
 
 ```
-CAD Settings > Enable Support for Container Tabs
+2. CAD Settings > Enable Support for Container Tabs
 ```
 
 [cookie-autodelete]: https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete
